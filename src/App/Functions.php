@@ -1,6 +1,5 @@
 <?php
 namespace Valoon\App\Framework;
-defined('APP') || (header('HTTP/1.1 403 Forbidden') & die('403.14 - Directory listing denied.'));
 function redirect($url) {
 	$isExternal = stripos($url, "http://") !== false || stripos($url, "https://") !== false;
 	if (!$isExternal) {
